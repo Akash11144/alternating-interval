@@ -1,19 +1,19 @@
 var t=document.getElementById("cnt");
-var chk=0;
+var incrementValue=0;
 var s=Number(t.innerText);
 if(s>0)
-    chk==0;
+    incrementValue=false;
 else
-    chk==1;
+    incrementValue=true;
 var i=window.setInterval(function(){
-    if(chk==0){
+    if(incrementValue==false){
         if(t.innerText==1)
-            chk=1;
+              incrementValue=true;
         --t.innerText;
     }
-    else if(chk==1){
+    else if(incrementValue==true){
         if(t.innerText>=9)
-            chk=0;
+              incrementValue=false;
         ++t.innerText;
     }
 },500);
