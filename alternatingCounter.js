@@ -16,4 +16,4 @@ var i=window.setInterval(function(){
             chk=0;
         ++t.innerText;
     }
-},1000);
+},500);
